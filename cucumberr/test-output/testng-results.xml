@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="69460" started-at="2019-05-13T09:49:33Z" finished-at="2019-05-13T09:50:43Z">
+  <suite name="Suite" duration-ms="27728" started-at="2019-05-13T11:38:45Z" finished-at="2019-05-13T11:39:13Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.runner@4b952a2d]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="69460" started-at="2019-05-13T09:49:33Z" finished-at="2019-05-13T09:50:43Z">
+    <test name="Test" duration-ms="27728" started-at="2019-05-13T11:38:45Z" finished-at="2019-05-13T11:39:13Z">
       <class name="Runner.runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.runner@4b952a2d]" name="setUpClass" is-config="true" duration-ms="308" started-at="2019-05-13T15:19:33Z" finished-at="2019-05-13T15:19:34Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.runner@4b952a2d]" name="setUpClass" is-config="true" duration-ms="370" started-at="2019-05-13T17:08:45Z" finished-at="2019-05-13T17:08:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.runner@4b952a2d]" name="feature" duration-ms="42030" started-at="2019-05-13T15:19:34Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-13T15:20:16Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.runner@4b952a2d]" name="feature" duration-ms="20778" started-at="2019-05-13T17:08:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-13T17:09:06Z">
           <params>
             <param index="0">
               <value>
@@ -22,37 +22,22 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.runner@4b952a2d]" name="feature" duration-ms="26276" started-at="2019-05-13T15:20:16Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-13T15:20:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[This feature is to test the login part]]>
-              </value>
-            </param>
-          </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id='text']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
 System info: host: 'sivaranjanis-MacBook-Pro.local', ip: 'fe80:0:0:0:100c:6d0d:56f4:c33b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 22711, moz:profile: /var/folders/zk/2zmw3bp15kn..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: f6d4033b-8e19-d040-8145-bdf94fe6c2d6
-*** Element info: {Using=xpath, value=//*[@id='text']}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 26343, moz:profile: /var/folders/zk/2zmw3bp15kn..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e89f6731-e2d7-6748-b856-1112623b643d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id='text']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
 System info: host: 'sivaranjanis-MacBook-Pro.local', ip: 'fe80:0:0:0:100c:6d0d:56f4:c33b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 22711, moz:profile: /var/folders/zk/2zmw3bp15kn..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: f6d4033b-8e19-d040-8145-bdf94fe6c2d6
-*** Element info: {Using=xpath, value=//*[@id='text']}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 26343, moz:profile: /var/folders/zk/2zmw3bp15kn..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e89f6731-e2d7-6748-b856-1112623b643d
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -79,14 +64,12 @@ Session ID: f6d4033b-8e19-d040-8145-bdf94fe6c2d6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id='text']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
 System info: host: 'sivaranjanis-MacBook-Pro.local', ip: 'fe80:0:0:0:100c:6d0d:56f4:c33b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 22711, moz:profile: /var/folders/zk/2zmw3bp15kn..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: f6d4033b-8e19-d040-8145-bdf94fe6c2d6
-*** Element info: {Using=xpath, value=//*[@id='text']}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 26343, moz:profile: /var/folders/zk/2zmw3bp15kn..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e89f6731-e2d7-6748-b856-1112623b643d
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,19 +80,119 @@ Session ID: f6d4033b-8e19-d040-8145-bdf94fe6c2d6
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at stepDefinitions.loginStep.user_enters_username(loginStep.java:28)
-	at ✽.When User enters username(log.feature:4)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+	at stepDefinitions.TodoListStep.user_should_be_on_the_login_screen(TodoListStep.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	... 25 more
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.runner@4b952a2d]" name="tearDownClass" is-config="true" duration-ms="723" started-at="2019-05-13T15:20:42Z" finished-at="2019-05-13T15:20:43Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.runner@4b952a2d]" name="feature" duration-ms="6055" started-at="2019-05-13T17:09:06Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-05-13T17:09:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[This feature is to test the login part]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
+System info: host: 'sivaranjanis-MacBook-Pro.local', ip: 'fe80:0:0:0:100c:6d0d:56f4:c33b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 26343, moz:profile: /var/folders/zk/2zmw3bp15kn..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e89f6731-e2d7-6748-b856-1112623b643d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
+System info: host: 'sivaranjanis-MacBook-Pro.local', ip: 'fe80:0:0:0:100c:6d0d:56f4:c33b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 26343, moz:profile: /var/folders/zk/2zmw3bp15kn..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e89f6731-e2d7-6748-b856-1112623b643d
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
+System info: host: 'sivaranjanis-MacBook-Pro.local', ip: 'fe80:0:0:0:100c:6d0d:56f4:c33b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 55.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 26343, moz:profile: /var/folders/zk/2zmw3bp15kn..., pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e89f6731-e2d7-6748-b856-1112623b643d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+	at stepDefinitions.TodoListStep.user_should_be_on_the_login_screen(TodoListStep.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.runner@4b952a2d]" name="tearDownClass" is-config="true" duration-ms="407" started-at="2019-05-13T17:09:13Z" finished-at="2019-05-13T17:09:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
